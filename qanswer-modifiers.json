@@ -1,0 +1,1151 @@
+{
+    "dataset": {
+        "id": "qanswer-modifiers"
+    },
+    "questions": [
+        {
+            "id": 2400,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q183> .  \n ?s1  ?p2  <http://www.wikidata.org/entity/Q82955> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o3 .  \nFILTER( ?o3 >= \"1890-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o3 <= \"1890-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "I search german politicians born in 1890",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2401,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (year(?o1) as ?year)  where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "In which year was barack obama born",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2402,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q33999> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \nFILTER( ?o1 >= \"1853-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o1 <= \"1853-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "actors born in 1853",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2403,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q33999> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \nFILTER( ?o1 >= \"1872-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o1 <= \"1872-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "actors born in 1872",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2404,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q245068> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \nFILTER( ?o1 < \"1920-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "comedians born before 1920",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2405,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT ?o1  where { <http://www.wikidata.org/entity/Q220>  <http://www.wikidata.org/prop/direct/P571>  ?o1 .  \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "when was rome founded",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2406,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT ?o1  where { <http://www.wikidata.org/entity/Q220>  <http://www.wikidata.org/prop/direct/P1082>  ?o1 .  \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "how many inhabitants has rome",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2407,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q33999> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \nFILTER( ?o1 >= \"1980-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o1 <= \"1980-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "actors born in 1980",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2408,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q133105>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"de\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is leg in german",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2409,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q133105>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"de\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is leg in german",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2410,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT ((year(now()) - year(?o1) - if(month(now())<month(?o1) || (month(now())=month(?o1) && day(now())<day(?o1)),1,0) )  as ?birthDate) where { <http://www.wikidata.org/entity/Q22686>  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  }"
+            },
+            "question": [
+                {
+                    "string": "How old is Donald trump",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2411,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT ((year(now()) - year(?o1) - if(month(now())<month(?o1) || (month(now())=month(?o1) && day(now())<day(?o1)),1,0) )  as ?birthDate) where { <http://www.wikidata.org/entity/Q34086>  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  }"
+            },
+            "question": [
+                {
+                    "string": "how old is justin bieber?",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2412,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q1726>  <http://www.wikidata.org/prop/direct/P1082>  ?o1 .   FILTER (datatype(?o1) = <http://www.w3.org/2001/XMLSchema#integer> || datatype(?o1) = <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> || datatype(?o1) = <http://www.w3.org/2001/XMLSchema#decimal> || datatype(?o1) = <http://www.w3.org/2001/XMLSchema#double>) . \r\n } limit 1000"
+            },
+            "question": [
+                {
+                    "string": "how many inhabitants has munich?",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2413,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q40>  <http://www.wikidata.org/prop/direct/P610>  ?o1 .  } limit 1000"
+            },
+            "question": [
+                {
+                    "string": "Was ist der h\u00f6chste Berg \u00d6sterreichs",
+                    "language": "de"
+                }
+            ]
+        },
+        {
+            "id": 2414,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q100>  <http://www.wikidata.org/prop/direct/P1082>  ?o1 .  } limit 1000"
+            },
+            "question": [
+                {
+                    "string": "what is the population of boston",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2415,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q16470>  <http://www.wikidata.org/prop/direct/P585>  ?o1 .  } limit 1000"
+            },
+            "question": [
+                {
+                    "string": "When was D-Day?",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2416,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q937857> .  ?s1  ?p2  <http://www.wikidata.org/entity/Q79> . } limit 1000"
+            },
+            "question": [
+                {
+                    "string": "\u0644\u0627\u0639\u0628\u064a\u0646 \u0643\u0631\u0629 \u0642\u062f\u0645 \u0645\u0635\u0631\u064a\u064a\u0646",
+                    "language": "ar"
+                }
+            ]
+        },
+        {
+            "id": 2417,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT ?o1  where { <http://www.wikidata.org/entity/Q220>  <http://www.wikidata.org/prop/direct/P1082>  ?o1 .  \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "rome inhabitants how many",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2418,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q245068> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o2 .  \nFILTER( ?o2 >= \"1900-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o2 <= \"1900-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "comedians born in 1900",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2419,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (count(?o1) as ?c)  where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P40>  ?o1 .  \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "how many children has barack obama?",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2420,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q13276>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"it\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "What is cake in italian?",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2421,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q2>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"it\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is earth in italian",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2422,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q2>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"it\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is earth in italian",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2423,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (year(now()) - year(?o1) - if(month(now())<month(?o1) || (month(now())=month(?o1) && day(now())<day(?o1)),1,0)   as ?birthDate) where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "how old is Barack Obama ?",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2424,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT ?o1  where { <http://www.wikidata.org/entity/Q23628>  <http://www.wikidata.org/prop/direct/P2437>  ?o1 .  \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "How many seasons in The Sopranos?",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2425,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (year(?o1) as ?year)  where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \r\n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "  birth date barack obama year",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2426,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT ((year(now()) - year(?o1) - if(month(now())<month(?o1) || (month(now())=month(?o1) && day(now())<day(?o1)),1,0) )  as ?birthDate) where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \r\n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "how old barack obama",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2427,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT ((year(now()) - year(?o1) - if(month(now())<month(?o1) || (month(now())=month(?o1) && day(now())<day(?o1)),1,0) )  as ?birthDate) where { <http://www.wikidata.org/entity/Q90>  <http://www.wikidata.org/prop/direct/P571>  ?o1 .  \r\n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "how old is paris",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2428,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (count(?o1) as ?c)  where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P40>  ?o1 .  \r\n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "how many children has obama",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2429,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q33999> .  \r\n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \r\nFILTER( ?o1 > \"1988-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \r\n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "give me actors born after 1988",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2430,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "ASK where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P26>  <http://www.wikidata.org/entity/Q13133> .  \r\n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "is barack obama married with michelle obama",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2431,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT ((year(now()) - year(?o1) - if(month(now())<month(?o1) || (month(now())=month(?o1) && day(now())<day(?o1)),1,0) )  as ?birthDate) where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \r\n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "how old is barack obama",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2432,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (count(?o1) as ?c)  where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P40>  ?o1 .  \r\n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "how many children has barack obama",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2433,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (year(?o1) as ?year)  where { <http://www.wikidata.org/entity/Q362>  <http://www.wikidata.org/prop/direct/P582>  ?o1 .  \r\n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "in which year ended WWII",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2434,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (month(?o1) as ?month)  where { <http://www.wikidata.org/entity/Q362>  <http://www.wikidata.org/prop/direct/P582>  ?o1 .  \r\n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "in which month ended WWII",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2435,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (day(?o1) as ?day)  where { <http://www.wikidata.org/entity/Q362>  <http://www.wikidata.org/prop/direct/P582>  ?o1 .  \r\n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "which day ended WWII",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2436,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (( year(now()) - year(?o1))  as ?date) where { <http://www.wikidata.org/entity/Q362>  <http://www.wikidata.org/prop/direct/P582>  ?o1 .  \r\n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "years ago ended WWII",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2437,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q89>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \r\nFILTER langMatches( lang(?o1 ), \"fr\"). \r\n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is apple in french",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2438,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q68>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \r\nFILTER langMatches( lang(?o1 ), \"fr\"). \r\n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is computer in french",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2439,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q2>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \r\nFILTER langMatches( lang(?o1 ), \"it\"). \r\n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is earth in italian",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2440,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q144>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \r\nFILTER langMatches( lang(?o1 ), \"zh\"). \r\n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is dog in chinese",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2441,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q220>  <http://www.wikidata.org/prop/direct/P1082>  ?o1 . } limit 1000"
+            },
+            "question": [
+                {
+                    "string": "rome inhabitants",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2442,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q3897>  <http://www.wikidata.org/prop/direct/P1082>  ?o1 . } limit 1000"
+            },
+            "question": [
+                {
+                    "string": "how many inhabitants has luanda",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2443,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q46>  <http://www.wikidata.org/prop/direct/P610>  ?o1 .  ?o1  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q8502> . } limit 1000"
+            },
+            "question": [
+                {
+                    "string": "what is the highest mountain in europe",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2444,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q42716>  <http://www.wikidata.org/prop/direct/P1082>  ?o1 . } limit 1000"
+            },
+            "question": [
+                {
+                    "string": "saint etienne inhabitants",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2445,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT ?o1  where { <http://www.wikidata.org/entity/Q42716>  <http://www.wikidata.org/prop/direct/P1082>  ?o1 .  \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "how many inhabitants has saint etienne ",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2446,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q46> .  \n ?s1  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q515> .  \n ?s1  <http://www.wikidata.org/prop/direct/P1082>  ?o1 .  \n} ORDER BY DESC(?o1) LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "give me the most populated city in europe",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2447,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q33999> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \nFILTER( ?o1 >= \"1853-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o1 <= \"1853-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "actors born in 1853",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2448,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q33999> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \nFILTER( ?o1 >= \"1872-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o1 <= \"1872-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "actors born in 1872",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2449,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q33999> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \nFILTER( ?o1 >= \"1980-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o1 <= \"1980-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "actors born in 1980",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2450,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q133105>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"de\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is leg in german",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2451,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q183> .  ?s1  ?p2  <http://www.wikidata.org/entity/Q245068> .  ?s1  <http://www.wikidata.org/prop/direct/P19>  <http://www.wikidata.org/entity/Q1726> . } limit 1000"
+            },
+            "question": [
+                {
+                    "string": "german comedians born in munich",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2452,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q133105>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"de\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is leg in german",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2453,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q6607>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"de\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is guitar in german",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2454,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q11035>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"de\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is phone in german",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2455,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q11035>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"de\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is phone in german",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2456,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q11035>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"de\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is phone in german",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2457,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q11035>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"de\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is phone in german",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2458,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q11035>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"de\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is phone in german",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2459,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q190771>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"de\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "bathroom in german",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2460,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q190771>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"fr\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "bathroom in french",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2461,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q7366> .  \n ?s1  ?p2  <http://www.wikidata.org/entity/Q1225> .  \n ?s1  <http://www.wikidata.org/prop/direct/P577>  ?o1 .  \nFILTER( ?o1 >= \"1980-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o1 <= \"1990-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "Show me all songs from Bruce Springsteen released between 1980 and 1990.",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2462,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q38> .  \n ?s1  ?p2  <http://www.wikidata.org/entity/Q245068> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \nFILTER( ?o1 >= \"1960-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o1 <= \"1960-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "italian comedians born in 1960",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2463,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q38> .  \n ?s1  ?p2  <http://www.wikidata.org/entity/Q245068> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \nFILTER( ?o1 >= \"1970-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o1 <= \"1970-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "italian comedians born in 1970",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2464,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q245068> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \nFILTER( ?o1 < \"1920-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "comedians born before 1920",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2465,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q245068> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \nFILTER( ?o1 >= \"1910-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o1 <= \"1920-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "comedians born between 1910 and 1920",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2466,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (year(?o1) as ?year)  where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "in which year was barack obama born?",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2467,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (year(?o1) as ?year)  where { <http://www.wikidata.org/entity/Q6534>  <http://www.wikidata.org/prop/direct/P580>  ?o1 .  \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "in which year did the french revolution started",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2468,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q515> .  \n ?s1  <http://www.wikidata.org/prop/direct/P1082>  ?o2 .  \nFILTER( ?o2 >= \"1000000\"^^<http://www.w3.org/2001/XMLSchema#integer>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "give me cities with more than 1000000 inhabitants",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2469,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q515> .  \n ?s1  <http://www.wikidata.org/prop/direct/P1082>  ?o2 .  \nFILTER( ?o2 >= \"10000000\"^^<http://www.w3.org/2001/XMLSchema#integer>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "give me cities with more than 10000000 inhabitants",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2470,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q783794> .  \n ?s1  <http://www.wikidata.org/prop/direct/P1128>  ?o2 .  \nFILTER( ?o2 = \"10000\"^^<http://www.w3.org/2001/XMLSchema#integer>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "give me companies with more then 10000 employees",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2471,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q783794> .  \n ?s1  <http://www.wikidata.org/prop/direct/P1128>  ?o2 .  \nFILTER( ?o2 >= \"10000\"^^<http://www.w3.org/2001/XMLSchema#integer>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "give me companies with more than 10000 employees",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2472,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q783794> .  \n ?s1  <http://www.wikidata.org/prop/direct/P1128>  ?o2 .  \nFILTER( ?o2 >= \"100000\"^^<http://www.w3.org/2001/XMLSchema#integer>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "give me companies with more than 100000 employees",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2473,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q81727>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"fr\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is cup in french",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2474,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P40>  ?o1 .  \n ?o1  <http://www.wikidata.org/prop/direct/P569>  ?o2 .  \nFILTER( ?o2 < \"2000-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "give me obamas children born before 2000",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2475,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P40>  ?o1 .  \n ?o1  <http://www.wikidata.org/prop/direct/P569>  ?o2 .  \nFILTER( ?o2 > \"2000-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "give me children of obama born after 2000",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2476,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q245068> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o2 .  \nFILTER( ?o2 > \"1900-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "comedians born after 1900",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2477,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q245068> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o2 .  \nFILTER( ?o2 >= \"1900-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o2 <= \"1900-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "comedians born in 1900",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2478,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q8502> .  \n ?s1  ?p2  <http://www.wikidata.org/entity/Q1216> .  \n ?s1  <http://www.wikidata.org/prop/direct/P2044>  ?o3 .  \nFILTER( ?o3 >= \"3000\"^^<http://www.w3.org/2001/XMLSchema#integer>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "give me mountains in piedmont with elevation more than 3000 meters",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2479,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q8502> .  \n ?s1  ?p2  <http://www.wikidata.org/entity/Q1286> .  \n ?s1  <http://www.wikidata.org/prop/direct/P2044>  ?o3 .  \nFILTER( ?o3 >= \"3000\"^^<http://www.w3.org/2001/XMLSchema#integer>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what are mountains in the alps with elevation  more than 3000 meters",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2480,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q8502> .  \n ?s1  ?p2  <http://www.wikidata.org/entity/Q1286> .  \n ?s1  <http://www.wikidata.org/prop/direct/P2044>  ?o3 .  \nFILTER( ?o3 >= \"3000\"^^<http://www.w3.org/2001/XMLSchema#integer>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what are mountains in the alps with elevation more than 3000 meters",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2481,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  <http://www.wikidata.org/prop/direct/P31>  <http://www.wikidata.org/entity/Q8502> .  \n ?s1  <http://www.wikidata.org/prop/direct/P2044>  ?o2 .  \nFILTER( ?o2 >= \"3000\"^^<http://www.w3.org/2001/XMLSchema#integer>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what are mountains with elevation more than 3000 meters",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2482,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q783794> .  \n ?s1  <http://www.wikidata.org/prop/direct/P1128>  ?o2 .  \nFILTER( ?o2 >= \"100000\"^^<http://www.w3.org/2001/XMLSchema#integer>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "which companies have more than 100000 employees",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2483,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?o1 where { <http://www.wikidata.org/entity/Q23397>  <http://www.w3.org/2000/01/rdf-schema#label>  ?o1 .  \nFILTER langMatches( lang(?o1 ), \"fr\"). \n } LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "what is lake in french",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2484,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q385378> .  \n ?s1  <http://www.wikidata.org/prop/direct/P1101>  ?o2 .  \nFILTER( ?o2 >= \"30\"^^<http://www.w3.org/2001/XMLSchema#integer>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": " building with more than 30 floors?",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2485,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q385378> .  \n ?s1  ?p2  <http://www.wikidata.org/entity/Q30> .  \n ?s1  <http://www.wikidata.org/prop/direct/P1101>  ?o3 .  \nFILTER( ?o3 >= \"30\"^^<http://www.w3.org/2001/XMLSchema#integer>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": " building in usa with more than 30 floors?",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2486,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT DISTINCT ?s1 where { ?s1  ?p1  <http://www.wikidata.org/entity/Q183> .  \n ?s1  ?p2  <http://www.wikidata.org/entity/Q82955> .  \n ?s1  <http://www.wikidata.org/prop/direct/P569>  ?o3 .  \nFILTER( ?o3 >= \"1890-01-01T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \nFILTER( ?o3 <= \"1890-12-31T00:00:00Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime>). \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "I search german politicians born in 1890",
+                    "language": "en"
+                }
+            ]
+        },
+        {
+            "id": 2487,
+            "knowledgebase": "wikidata",
+            "query": {
+                "sparql": "SELECT (year(?o1) as ?year)  where { <http://www.wikidata.org/entity/Q76>  <http://www.wikidata.org/prop/direct/P569>  ?o1 .  \n} LIMIT 1000"
+            },
+            "question": [
+                {
+                    "string": "In which year was barack obama born",
+                    "language": "en"
+                }
+            ]
+        }
+    ]
+}
